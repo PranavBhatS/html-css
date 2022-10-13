@@ -1,0 +1,66 @@
+/* universal selector 
+this will select everythinng except ::before & ::after
+*/
+* {
+  box-sizing: border-box;
+}
+
+section {
+  border: 1px solid gray;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.circle {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: antiquewhite;
+  display: inline-block;
+}
+/*
+direct children >
+*/
+.direct-children > p {
+  color: red;
+}
+
+/* Adjescent sibling 
+one before it has to be that selector
+*/
+.adjecent-sibling .circle + .circle {
+  background: red;
+}
+
+/* general Sibling 
+any thing before it has to be that selector
+*/
+.general-sibling .circle ~ .circle {
+  background: red;
+}
+
+/* attriburte selector */
+a[href^="https"] {
+     color: red;
+}
+
+a[href*="google"] {
+     color: red;
+}
+
+a[href$=".in"] {
+     color: red;
+}
+
+/* .title {
+  color: aqua;
+}
+
+div p {
+  color: blue;
+}
+
+p {
+  color: red;
+  position: relative;
+} */

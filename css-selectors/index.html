@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+     <title>Document</title>
+</head>
+
+<body>
+     <!-- 
+          1. element selector
+          2. class selector
+          3. ID selector we can only 1 id for particular html tag
+      -->
+     <!-- 
+          Css selector Combinations
+
+          1. if we write same selctors multple times last rules will win
+          2. element selectors having lowest specificty of all
+
+          lowest - highest
+          element - class - id - inline
+       -->
+
+     <!-- Direct Children > -->
+     <section class="direct-children">
+          <p>Direct child</p>
+          <div class="content">
+               <p class="desc">
+                    Lorem, ipsum.
+               </p>
+          </div>
+     </section>
+
+     <!-- Adjecent sibling -->
+     <section class="adjecent-sibling">
+          <h3>Adjecent siblings</h3>
+          <div class="circle"></div> 
+          <div class="circle"></div>
+          <!-- <p>Lorem.</p> -->
+          <div class="circle"></div>
+          <div class="circle"></div>
+
+     </section>
+
+      <!-- general sibling -->
+      <section class="general-sibling">
+          <h3>General Siblings</h3>
+          <div class="circle"></div> 
+          <div class="circle"></div>
+          <p>Lorem.</p>
+          <div class="circle"></div>
+          <div class="circle"></div>
+
+     </section>
+
+     <div>
+          <p class="title">Pranav
+          </p>
+          <p class="content">Lorem, ipsum dolor.</p>
+     </div>
+     <p>Something else</p>
+
+
+
+</body>
+
+</html>

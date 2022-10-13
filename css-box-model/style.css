@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+}
+
+.default {
+  background-color: red;
+  height: 100px;
+  width: 100px;
+  padding: 10px;
+  border: 15px solid yellowgreen;
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+.b2 {
+     background-color: aqua;
+}
+
+/* margin pushing the element from outside */
+/* padding some space to content */
